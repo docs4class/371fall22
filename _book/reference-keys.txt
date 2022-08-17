@@ -1,7 +1,4 @@
-about
-usage
-render-book
-preview-book
+introduction
 syllabus
 course-objectives-and-learning-outcomes
 text-and-resources
@@ -40,14 +37,14 @@ workspace-.rdata
 working-directory
 exercises
 objects-and-arithmetic
-introduction
+introduction-1
 basic-functions
 statistics-and-summaries
 statistical-analysis
 anscombes-quartet
 exercises-1
 summaries-and-subscripting
-introduction-1
+introduction-2
 exercises-summaries-and-subscripting
 matrices
 cbind-and-rbind

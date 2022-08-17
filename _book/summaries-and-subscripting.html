@@ -4,15 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 10 Summaries and Subscripting | A Minimal Book Example</title>
-<meta name="author" content="John Doe">
+<title>Chapter 10 Summaries and Subscripting | BADM 371 Intro to Data Analytics</title>
+<meta name="author" content="BADM 371">
 <meta name="description" content="10.1 Introduction Let’s suppose we’ve collected some data from an experiment and stored them in an object x: x&lt;-c(7.5,8.2,3.1,5.6,8.2,9.3,6.5,7.0,9.3,1.2,14.5,6.2) Some simple summary statistics...">
 <meta name="generator" content="bookdown 0.25 with bs4_book()">
-<meta property="og:title" content="Chapter 10 Summaries and Subscripting | A Minimal Book Example">
+<meta property="og:title" content="Chapter 10 Summaries and Subscripting | BADM 371 Intro to Data Analytics">
 <meta property="og:type" content="book">
 <meta property="og:description" content="10.1 Introduction Let’s suppose we’ve collected some data from an experiment and stored them in an object x: x&lt;-c(7.5,8.2,3.1,5.6,8.2,9.3,6.5,7.0,9.3,1.2,14.5,6.2) Some simple summary statistics...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 10 Summaries and Subscripting | A Minimal Book Example">
+<meta name="twitter:title" content="Chapter 10 Summaries and Subscripting | BADM 371 Intro to Data Analytics">
 <meta name="twitter:description" content="10.1 Introduction Let’s suppose we’ve collected some data from an experiment and stored them in an object x: x&lt;-c(7.5,8.2,3.1,5.6,8.2,9.3,6.5,7.0,9.3,1.2,14.5,6.2) Some simple summary statistics...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
 
     <div class="d-flex align-items-start justify-content-between">
       <h1>
-        <a href="index.html" title="">A Minimal Book Example</a>
+        <a href="index.html" title="">BADM 371 Intro to Data Analytics</a>
       </h1>
       <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
     </div>
@@ -43,7 +43,7 @@
 
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
-<li><a class="" href="index.html"><span class="header-section-number">1</span> About</a></li>
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a></li>
 <li><a class="" href="syllabus.html"><span class="header-section-number">2</span> Syllabus</a></li>
 <li><a class="" href="our-class-rhythm.html"><span class="header-section-number">3</span> Our Class Rhythm</a></li>
 <li><a class="" href="end-in-mind.html"><span class="header-section-number">4</span> End in Mind</a></li>
@@ -68,15 +68,15 @@
 <h1>
 <span class="header-section-number">10</span> Summaries and Subscripting<a class="anchor" aria-label="anchor" href="#summaries-and-subscripting"><i class="fas fa-link"></i></a>
 </h1>
-<div id="introduction-1" class="section level2" number="10.1">
+<div id="introduction-2" class="section level2" number="10.1">
 <h2>
-<span class="header-section-number">10.1</span> Introduction<a class="anchor" aria-label="anchor" href="#introduction-1"><i class="fas fa-link"></i></a>
+<span class="header-section-number">10.1</span> Introduction<a class="anchor" aria-label="anchor" href="#introduction-2"><i class="fas fa-link"></i></a>
 </h2>
 <p>Let’s suppose we’ve collected some data from an experiment and stored them in an object x:</p>
-<div class="sourceCode" id="cb43"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb41"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">7.5</span>,<span class="fl">8.2</span>,<span class="fl">3.1</span>,<span class="fl">5.6</span>,<span class="fl">8.2</span>,<span class="fl">9.3</span>,<span class="fl">6.5</span>,<span class="fl">7.0</span>,<span class="fl">9.3</span>,<span class="fl">1.2</span>,<span class="fl">14.5</span>,<span class="fl">6.2</span><span class="op">)</span></code></pre></div>
 <p>Some simple summary statistics of these data can be produced:</p>
-<div class="sourceCode" id="cb44"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb42"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>
 <span class="co">#&gt; [1] 7.216667</span>
 <span class="fu"><a href="https://rdrr.io/r/stats/cor.html">var</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>
@@ -90,7 +90,7 @@
 <p>It may be, however, that we subsequently learn that the first 6 data points correspond to measurements made on one machine, and the second six on another machine.</p>
 <p>This might lead us to want to summarize the two sets of data separately, so we would need to extract from
 x the two relevant subvectors. This is achieved by subscripting:</p>
-<div class="sourceCode" id="cb45"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb43"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">6</span><span class="op">]</span>
 <span class="co">#&gt; [1] 7.5 8.2 3.1 5.6 8.2 9.3</span>
 <span class="va">x</span><span class="op">[</span><span class="fl">7</span><span class="op">:</span><span class="fl">12</span><span class="op">]</span>
@@ -102,15 +102,15 @@ x the two relevant subvectors. This is achieved by subscripting:</p>
 <span class="co">#&gt;    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. </span>
 <span class="co">#&gt;   1.200   6.275   6.750   7.450   8.725  14.500</span></code></pre></div>
 <p>Other subsets can be created in the obvious way. For example:</p>
-<div class="sourceCode" id="cb46"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb44"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">2</span>,<span class="fl">4</span>,<span class="fl">9</span><span class="op">)</span><span class="op">]</span>
 <span class="co">#&gt; [1] 8.2 5.6 9.3</span></code></pre></div>
 <p>Negative integers can be used to exclude particular elements. For example</p>
-<div class="sourceCode" id="cb47"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb45"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">6</span><span class="op">)</span><span class="op">]</span>
 <span class="co">#&gt; [1]  6.5  7.0  9.3  1.2 14.5  6.2</span></code></pre></div>
 <p>has the same effect as</p>
-<div class="sourceCode" id="cb48"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb46"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fl">7</span><span class="op">:</span><span class="fl">12</span><span class="op">]</span>
 <span class="co">#&gt; [1]  6.5  7.0  9.3  1.2 14.5  6.2</span></code></pre></div>
 </div>
@@ -144,7 +144,7 @@ for each shop.</li>
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#summaries-and-subscripting"><span class="header-section-number">10</span> Summaries and Subscripting</a></li>
-<li><a class="nav-link" href="#introduction-1"><span class="header-section-number">10.1</span> Introduction</a></li>
+<li><a class="nav-link" href="#introduction-2"><span class="header-section-number">10.1</span> Introduction</a></li>
 <li><a class="nav-link" href="#exercises-summaries-and-subscripting"><span class="header-section-number">10.2</span> Exercises (Summaries and Subscripting)</a></li>
 </ul>
 
@@ -163,7 +163,7 @@ for each shop.</li>
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>A Minimal Book Example</strong>" was written by John Doe. It was last built on 2022-08-17.</p>
+    <p>"<strong>BADM 371 Intro to Data Analytics</strong>" was written by BADM 371. It was last built on 2022-08-17.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
@@ -171,34 +171,6 @@ for each shop.</li>
   </div>
 
 </div></div>
-</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
-for (let popover of popovers) {
-  const div = document.createElement('div');
-  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
-  div.innerHTML = popover.getAttribute('data-content');
-
-  var has_math = div.querySelector("span.math");
-  if (has_math) {
-    document.body.appendChild(div);
-    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
-    MathJax.Hub.Queue(function() {
-      popover.setAttribute('data-content', div.innerHTML);
-      document.body.removeChild(div);
-    })
-  }
-}
-</script>
+</footer>
 </body>
 </html>

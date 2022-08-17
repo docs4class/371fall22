@@ -4,15 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 12 Preloaded data and mtcars | A Minimal Book Example</title>
-<meta name="author" content="John Doe">
+<title>Chapter 12 Preloaded data and mtcars | BADM 371 Intro to Data Analytics</title>
+<meta name="author" content="BADM 371">
 <meta name="description" content="R comes with several built-in data sets, which are generally used as demo data for playing with R functions. To see the datasets type: data()  12.1 Practicing with mtcars data set This...">
 <meta name="generator" content="bookdown 0.25 with bs4_book()">
-<meta property="og:title" content="Chapter 12 Preloaded data and mtcars | A Minimal Book Example">
+<meta property="og:title" content="Chapter 12 Preloaded data and mtcars | BADM 371 Intro to Data Analytics">
 <meta property="og:type" content="book">
 <meta property="og:description" content="R comes with several built-in data sets, which are generally used as demo data for playing with R functions. To see the datasets type: data()  12.1 Practicing with mtcars data set This...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 12 Preloaded data and mtcars | A Minimal Book Example">
+<meta name="twitter:title" content="Chapter 12 Preloaded data and mtcars | BADM 371 Intro to Data Analytics">
 <meta name="twitter:description" content="R comes with several built-in data sets, which are generally used as demo data for playing with R functions. To see the datasets type: data()  12.1 Practicing with mtcars data set This...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
 
     <div class="d-flex align-items-start justify-content-between">
       <h1>
-        <a href="index.html" title="">A Minimal Book Example</a>
+        <a href="index.html" title="">BADM 371 Intro to Data Analytics</a>
       </h1>
       <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
     </div>
@@ -43,7 +43,7 @@
 
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
-<li><a class="" href="index.html"><span class="header-section-number">1</span> About</a></li>
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a></li>
 <li><a class="" href="syllabus.html"><span class="header-section-number">2</span> Syllabus</a></li>
 <li><a class="" href="our-class-rhythm.html"><span class="header-section-number">3</span> Our Class Rhythm</a></li>
 <li><a class="" href="end-in-mind.html"><span class="header-section-number">4</span> End in Mind</a></li>
@@ -80,13 +80,13 @@
 <li>Read in <code>mtcars</code>
 </li>
 </ol>
-<div class="sourceCode" id="cb66"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb64"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span><span class="va">mtcars</span><span class="op">)</span></code></pre></div>
 <ol start="2" style="list-style-type: decimal">
 <li>View first few rows and last few rows of mtcars dataframe using functions <code><a href="https://rdrr.io/r/utils/head.html">head()</a></code> and <code><a href="https://rdrr.io/r/utils/head.html">tail()</a></code>
 </li>
 </ol>
-<div class="sourceCode" id="cb67"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb65"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">mtcars</span><span class="op">)</span>
 <span class="co">#&gt;                    mpg cyl disp  hp drat    wt  qsec vs am</span>
 <span class="co">#&gt; Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1</span>
@@ -121,7 +121,7 @@
 <li>Some info about mtcars dataframe using function <code><a href="https://rdrr.io/r/base/colnames.html">colnames()</a></code>, <code><a href="https://rdrr.io/r/base/colnames.html">rownames()</a></code>, <code><a href="https://rdrr.io/r/base/summary.html">summary()</a></code>and <code><a href="https://rdrr.io/r/base/dim.html">dim()</a></code>
 </li>
 </ol>
-<div class="sourceCode" id="cb68"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb66"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/colnames.html">colnames</a></span><span class="op">(</span><span class="va">mtcars</span><span class="op">)</span>
 <span class="co">#&gt;  [1] "mpg"  "cyl"  "disp" "hp"   "drat" "wt"   "qsec" "vs"  </span>
 <span class="co">#&gt;  [9] "am"   "gear" "carb"</span>
@@ -176,19 +176,19 @@
 <ol start="4" style="list-style-type: decimal">
 <li>To calculate the variance of weight:</li>
 </ol>
-<div class="sourceCode" id="cb69"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb67"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/cor.html">var</a></span><span class="op">(</span><span class="va">mtcars</span><span class="op">$</span><span class="va">wt</span><span class="op">)</span>
 <span class="co">#&gt; [1] 0.957379</span></code></pre></div>
 <ol start="5" style="list-style-type: decimal">
 <li>To get the histogram of hp, the code below will produce a histogram:</li>
 </ol>
-<div class="sourceCode" id="cb70"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb68"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/graphics/hist.html">hist</a></span><span class="op">(</span><span class="va">mtcars</span><span class="op">$</span><span class="va">hp</span><span class="op">)</span></code></pre></div>
 <div class="inline-figure"><img src="16-mtcars_files/figure-html/unnamed-chunk-5-1.png" width="672"></div>
 <ol start="6" style="list-style-type: decimal">
 <li>To calculate the quantiles by percent:</li>
 </ol>
-<div class="sourceCode" id="cb71"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb69"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/quantile.html">quantile</a></span><span class="op">(</span><span class="va">mtcars</span><span class="op">$</span><span class="va">wt</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">.2</span>, <span class="fl">.4</span>, <span class="fl">.8</span><span class="op">)</span><span class="op">)</span>
 <span class="co">#&gt;   20%   40%   80% </span>
 <span class="co">#&gt; 2.349 3.158 3.770</span></code></pre></div>
@@ -277,7 +277,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>A Minimal Book Example</strong>" was written by John Doe. It was last built on 2022-08-17.</p>
+    <p>"<strong>BADM 371 Intro to Data Analytics</strong>" was written by BADM 371. It was last built on 2022-08-17.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
@@ -285,34 +285,6 @@
   </div>
 
 </div></div>
-</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
-for (let popover of popovers) {
-  const div = document.createElement('div');
-  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
-  div.innerHTML = popover.getAttribute('data-content');
-
-  var has_math = div.querySelector("span.math");
-  if (has_math) {
-    document.body.appendChild(div);
-    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
-    MathJax.Hub.Queue(function() {
-      popover.setAttribute('data-content', div.innerHTML);
-      document.body.removeChild(div);
-    })
-  }
-}
-</script>
+</footer>
 </body>
 </html>
