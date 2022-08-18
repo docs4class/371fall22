@@ -96,6 +96,33 @@ I am a Presby First+ Advocate. I am here to support our current first-generation
 
 I am a Presby First+ Advocate. I am committed to supporting first-generation students at Presbyterian College. At Presbyterian College, first-generation students are those in which neither parent nor legal guardian graduated from a four-year higher education institution with a bachelor's degree. If you are a first-generation college student, please contact me anytime or visit me during my office hours. For more information about support for first-generation college students on our campus visit our Presby First+ webpage.
 
+## Justice, Equity, Diversity, and Inclusion Syllabus Statements
+
+Presbyterian College is committed to ensuring students from all faiths, identities and backgrounds have access to the services they need to thrive during their time learning in the classroom, living in our housing facilities, eating in the dining hall, or attending events on campus.
+
+## Accessible Education
+
+To seek accommodations under the American Disabilities Act or Section 504 of the Rehabilitation Act, you must start the process yourself by completing the online form available on our website at https://www.presby.edu/academics/academic-resources-support/accommodations-for-disabilities/  and submitting appropriate documentation to accommodations@presby.edu. Accommodations will become effective once the structured exchange and documentation review processes are complete.
+
+## Bias Reporting
+
+Students are encouraged to report all acts of discrimination, spoken or written hate speech, harassment, offensive visual representations, threats, vandalism, and physical confrontations by using the bias reporting form available at https://www.presby.edu/about/office-of-diversity-and-inclusion/bias-incident-reporting/. All forms are sent directly to the VP for JEDI and will be addressed according to institutional policies and procedures.
+
+## Counseling and Health
+
+Recognizing physical and mental health are vitally important to academic success, we encourage students to take advantage of the counseling and health care services available on campus. To schedule an appointment with Counseling, feel free to call (864) 833-8263 or email counselingandhealth@presby.edu.  
+
+We also have a nurse practitioner in the Student Health Center Monday through Friday 11am – 1:15pm. To schedule an appointment, call (864) 833-8400. If an appointment is needed outside of those hours and off-campus, please call Family Health Care at (864) 833-5986.
+
+## Presby First+ Program
+
+The Presby First+ Program takes a holistic approach to helping first-generation college students accomplish their education and career goals. By connecting students with campus and community resources, the program positions students for success.
+
+As a Presby First+ Advocate, I am committed to supporting first-generation college students. (Insert if applicable: I was a first-generation college student, meaning neither one of my parents had earned a bachelor’s degree, so I may have experienced some of the things you will face during your journey.) Know that you have lots of people wanting to see you thrive, so please use them as a resource. You can contact me anytime via email or stopping by my office. More information about the Presby First+ program is available on our website.
+
+## Title IX Syllabus Statement
+
+In accordance with Title IX of the Education Amendments of 1972, Presbyterian College prohibits discrimination and harassment on the basis of sex. Presbyterian College strongly encourages the prompt reporting of, and is committed to a timely and fair resolution of, complaints of sex discrimination and harassment by students, faculty, staff, and third-party contractors. Sexual harassment includes quid pro quo harassment, sexual assault, dating violence, domestic violence, and stalking. Incidents of sex discrimination should be reported to the Title IX Coordinator, as outlined in the Sexual Misconduct Policy. The policy can be found on the Title IX page at Title IX | Presbyterian College | Clinton, SC .
 
 
 
@@ -118,6 +145,6 @@ I am a Presby First+ Advocate. I am committed to supporting first-generation stu
 
 **Dana Simmons:** "Can you predict which students will enroll at PC?"
 
-**Analytics Student:** ??? Yes.  Yes, I can. ???
+**Analytics Student:** "Yes.  Yes, I can." 
 
 :::
