@@ -10,15 +10,15 @@ Date | Topic |
 | 	Wednesday, August 24, 2022	| 	First Day Fun!	| 
 | 	Friday, August 26, 2022	| 	R basics and install	| 
 | 	Monday, August 29, 2022	| 	R basics and workflows	| 
-| 	Wednesday, August 31, 2022	| 	QUIZ 1 	| 
-| 	Friday, September 2, 2022	| 	Objects and Arithmetic	| 
+| 	Wednesday, August 31, 2022	| 	Objects and Arithmetic	| 
+| 	Friday, September 2, 2022	| 	QUIZ 1 	| 
 | 	Monday, September 5, 2022	| 	Summaries and Subscripting	| 
 | 	Wednesday, September 7, 2022	| 	Case: GDH Ice Cream	| 
-| 	Friday, September 9, 2022	| 	QUIZ	| 
+| 	Friday, September 9, 2022	| 	QUIZ	2| 
 | 	Monday, September 12, 2022	| 	Matrices and `mtcars`	| 
-| 	Wednesday, September 14, 2022	| 	Class	| 
-| 	Friday, September 16, 2022	| 	QUIZ	| 
-| 	Monday, September 19, 2022	| 	Class	| 
+| 	Wednesday, September 14, 2022	| 	Real Data	| 
+| 	Friday, September 16, 2022	| 	QUIZ	3| 
+| 	Monday, September 19, 2022	| 	Review	| 
 | 	Wednesday, September 21, 2022	| 	**EXAM 1**	| 
 | 	Friday, September 23, 2022	| 	Social Dilemma and Review	| 
 | 	Monday, September 26, 2022	| 		| 
@@ -51,8 +51,8 @@ Date | Topic |
 |	Monday, November 28, 2022	| 		| 
 |	Wednesday, November 30, 2022	| 		| 
 |	Friday, December 2, 2022	| 		| 
-|	Monday, December 5, 2022	| 	** LAST DAY OF CLASSES**	| 
+|	Monday, December 5, 2022	| 	**LAST DAY OF CLASSES**	| 
 |				| 
-|	Tuesday, December 13			| 
+|	**Tuesday, December 13**			| 
 |	**FINAL EXAM**		8:30 a.m. – E period	| 
 |	**FINAL EXAM**		1:30 p.m. – F period	| 

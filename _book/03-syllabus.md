@@ -38,12 +38,11 @@ This course will be focused on both understanding and applying key business anal
 Exams will cover assigned chapters in the textbook, other assigned readings, lectures, class exercises, class discussions, videos, and guest speakers. I will typically allocate time prior to each exam to clearly identify the body of knowledge each test will cover and to answer questions about the format and objectives of the exam.
 
 
-### Quizzes -- **DON"T MISS CLASS**
+### Quizzes -- **DON'T MISS CLASS**
 - The average of all quizzes and assignments will comprise the Quizzes and Assignments - 20% portion of your final grade
-- Quizzes are designed to prepare you for your exams and to ensure you stay up wiht the course material
+- Quizzes are designed to prepare you for your exams and to ensure you stay up whit the course material
 - Missed quizzes cannot be made up later.  Be present.  
 
-Quizzes rule.  **LISTEN.**
 
 ### Final Average
 
@@ -76,10 +75,6 @@ I will frequently give readings or assignments for you to complete prior to the 
 ## Attendance
 
 You are expected to be regular and punctual in your class attendance. Students are responsible for all the material missed and homework assignments made. If class is missed, notes/homework should be obtained from another student. If I am more than 15 minutes late, class is considered cancelled. No more than 4 absences are allowed during a semester. Exceeding the absence policy may result in receiving an F for the course. The professors roll is the official roll and students not present when roll is taken will be counted as absent. If a student must miss an exam, she or he must work out an agreeable time with the instructor to take the test prior to the exam being given. If a student misses a test due to an emergency, the student must inform the instructor as soon as is possible. In special cases, the instructor may allow the student to take a make-up exam.
-
-## Accommodations
-
-Presbyterian College is committed to providing reasonable accommodations for all students with documented disabilities. If you are seeking academic accommodations under the Americans with Disabilities Act, you must register with the Academic Success Office, located on 5th Avenue (beside Campus Police). To receive these accommodations, please obtain the proper Accommodations Approval Form from that office, and then meet with me at the beginning of the semester to discuss how we may deliver your approved accommodations. I especially encourage you to meet with me well in advance of the actual accommodations being provided, as it may not be feasible to offer immediate accommodations without sufficient advance notice (such as in the case of tests). I can assure you that all discussions will remain confidential. Disability Services information is located at this link http://bit.ly/PCdisabilityservices
 
 
 Additionally, it is the student’s responsibility to give the instructor one week’s notice prior to each instance where accommodation will be required.
