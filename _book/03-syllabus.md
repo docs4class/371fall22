@@ -118,6 +118,6 @@ I am a Presby First+ Advocate. I am committed to supporting first-generation stu
 
 **Dana Simmons:** "Can you predict which students will enroll at PC?"
 
-**Christina Miller:** ??? Well, can you? ???
+**Analytics Student:** ??? Yes.  Yes, I can. ???
 
 :::

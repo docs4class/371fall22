@@ -2,6 +2,42 @@
 
 This is a tentative schedule, **BUT** I will do my very best to stick to it, so that you may plan accordingly!
 
+## Fall 2022  {-}				
+				
+				
+Date | Topic | 				
+|:-------|:------				
+| 	Wednesday, August 24, 2022	| 	Fisker vs Tesla	| 
+| 	Monday, August 29, 2022	| 	Robin Hood	| 
+| 	Wednesday, August 31, 2022	| 	GM and FORD, Ch 1	| 
+| 	Monday, September 5, 2022	| 	Quiz: Can you Say	| 
+| 	Wednesday, September 7, 2022	| 	Quiz: CH 1 & 2	| 
+| 	Monday, September 12, 2022	| 	Quiz: CH 3	| 
+| 	Wednesday, September 14, 2022	| 	Quiz: CH 4	| 
+| 	Monday, September 19, 2022	| 	Case and Review	| 
+| 	Wednesday, September 21, 2022	| 	**EXAM 1**	| 
+| 	Monday, September 26, 2022	| 	CH 5	| 
+| 	Wednesday, September 28, 2022	| 	Case	| 
+| 	Monday, October 3, 2022	| 	Quiz: CH 6	| 
+| 	Wednesday, October 5, 2022	| 	Aldi & Walmart	| 
+| 	Monday, October 10, 2022	| 	FALL BREAK	| 
+| 	Wednesday, October 12, 2022	| 	Quiz: CH 7	| 
+| 	Monday, October 17, 2022	| 	Groups & Companies	| 
+| 	Wednesday, October 19, 2022	| 	Project Rubric	| 
+| 	Monday, October 24, 2022	| 	Quiz: Ch. 8	| 
+| 	Wednesday, October 26, 2022	| 	Quiz: Ch. 9	| 
+| 	Monday, October 31, 2022	| 	Groups & Companies	| 
+| 	Wednesday, November 2, 2022	| 	Case and Review	| 
+| 	Monday, November 7, 2022	| 	**EXAM 2**	| 
+| 	Wednesday, November 9, 2022	| 	Rough Draft Due 20%	| 
+| 	Monday, November 14, 2022	| 	GROUP MEETINGS	| 
+| 	Wednesday, November 16, 2022	| 	GROUP MEETINGS	| 
+| 	Monday, November 21, 2022	| 	Final Draft Due 80%	| 
+| 	Wednesday, November 23, 2022	| 	THANKSGIVING BREAK	| 
+|	  Monday, November 28, 2022	| 	**PRESENTATIONS**	| 
+| 	Wednesday, November 30, 2022	| 	**PRESENTATIONS**	| 
+|	 Monday, December 5, 2022	| 	LAST DAY OF CLASS	| 
+
 ## Spring 2022  {-}
 
 Date | Topic | 				
