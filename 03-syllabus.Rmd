@@ -20,7 +20,7 @@ This course will be focused on both understanding and applying key business anal
 
 ## Text and Resources
 
-- The course website (primary reource)
+- The course website (primary resource)
 - An Introduction to Statistical Learning with Applications in R; by Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani
 - R: A self-learn tutorial.
 - Other free, publicly available datasets and publications.
