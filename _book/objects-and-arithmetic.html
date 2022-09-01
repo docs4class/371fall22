@@ -54,9 +54,11 @@
 <li><a class="active" href="objects-and-arithmetic.html"><span class="header-section-number">9</span> Objects and Arithmetic</a></li>
 <li><a class="" href="summaries-and-subscripting.html"><span class="header-section-number">10</span> Summaries and Subscripting</a></li>
 <li><a class="" href="matrices.html"><span class="header-section-number">11</span> Matrices</a></li>
-<li><a class="" href="preloaded-data-and-mtcars.html"><span class="header-section-number">12</span> Preloaded data and mtcars</a></li>
-<li><a class="" href="more-simple-data-wrangling.html"><span class="header-section-number">13</span> More simple data wrangling</a></li>
-<li><a class="" href="gdh-ice-cream.html"><span class="header-section-number">14</span> GDH Ice Cream</a></li>
+<li><a class="" href="data-frames.html"><span class="header-section-number">12</span> Data Frames</a></li>
+<li><a class="" href="preloaded-data-and-mtcars.html"><span class="header-section-number">13</span> Preloaded data and mtcars</a></li>
+<li><a class="" href="more-simple-data-wrangling.html"><span class="header-section-number">14</span> More simple data wrangling</a></li>
+<li><a class="" href="gdh-ice-cream.html"><span class="header-section-number">15</span> GDH Ice Cream</a></li>
+<li><a class="" href="anscombes-quartet.html"><span class="header-section-number">16</span> Anscombe’s Quartet</a></li>
 </ul>
 
         <div class="book-extra">
@@ -211,61 +213,6 @@ are mixed. For example:</p>
 <span class="co">#&gt; [1] 4.821066</span></code></pre></div>
 <p>Finally, we can cover variance. Variance is the measure of distance between two numbers. This statistic is often used to measure how spread out your data is and can be used to determine your model’s accuracy. Typically, a higher variance means your model is inaccurate. So, when building models and reviewing your summary statistics, you want your variance to be as low as possible. There is a var() function that will find the variance of a variable for you, however typically you will create a confusion matrix (discussed in a later section) that will help you determine the variance, and thus accuracy of your model.</p>
 </div>
-<div id="anscombes-quartet" class="section level3" number="9.3.2">
-<h3>
-<span class="header-section-number">9.3.2</span> Anscombe’s Quartet<a class="anchor" aria-label="anchor" href="#anscombes-quartet"><i class="fas fa-link"></i></a>
-</h3>
-<p>You may be asking now, why bother visualizing data if I have all these numbers that will tell me what I need to know about my data? You are correct in saying that statistical data is very useful, and in many cases essential, however visualization is equally as important. Anscombe’s Quartet is a statistical phenomenon where four sets of data have very similar statistical properties, but very are completely different when graphed. Let’s take a look at the data:</p>
-<pre><code>#&gt;    x1 x2 x3 x4    y1   y2    y3    y4
-#&gt; 1  10 10 10  8  8.04 9.14  7.46  6.58
-#&gt; 2   8  8  8  8  6.95 8.14  6.77  5.76
-#&gt; 3  13 13 13  8  7.58 8.74 12.74  7.71
-#&gt; 4   9  9  9  8  8.81 8.77  7.11  8.84
-#&gt; 5  11 11 11  8  8.33 9.26  7.81  8.47
-#&gt; 6  14 14 14  8  9.96 8.10  8.84  7.04
-#&gt; 7   6  6  6  8  7.24 6.13  6.08  5.25
-#&gt; 8   4  4  4 19  4.26 3.10  5.39 12.50
-#&gt; 9  12 12 12  8 10.84 9.13  8.15  5.56
-#&gt; 10  7  7  7  8  4.82 7.26  6.42  7.91
-#&gt; 11  5  5  5  8  5.68 4.74  5.73  6.89</code></pre>
-<pre><code>#&gt;                    x1        x2        x3        x4
-#&gt; nobs        11.000000 11.000000 11.000000 11.000000
-#&gt; NAs          0.000000  0.000000  0.000000  0.000000
-#&gt; Minimum      4.000000  4.000000  4.000000  8.000000
-#&gt; Maximum     14.000000 14.000000 14.000000 19.000000
-#&gt; 1. Quartile  6.500000  6.500000  6.500000  8.000000
-#&gt; 3. Quartile 11.500000 11.500000 11.500000  8.000000
-#&gt; Mean         9.000000  9.000000  9.000000  9.000000
-#&gt; Median       9.000000  9.000000  9.000000  8.000000
-#&gt; Sum         99.000000 99.000000 99.000000 99.000000
-#&gt; SE Mean      1.000000  1.000000  1.000000  1.000000
-#&gt; LCL Mean     6.771861  6.771861  6.771861  6.771861
-#&gt; UCL Mean    11.228139 11.228139 11.228139 11.228139
-#&gt; Variance    11.000000 11.000000 11.000000 11.000000
-#&gt; Stdev        3.316625  3.316625  3.316625  3.316625
-#&gt; Skewness     0.000000  0.000000  0.000000  2.466911
-#&gt; Kurtosis    -1.528926 -1.528926 -1.528926  4.520661
-#&gt;                    y1        y2        y3        y4
-#&gt; nobs        11.000000 11.000000 11.000000 11.000000
-#&gt; NAs          0.000000  0.000000  0.000000  0.000000
-#&gt; Minimum      4.260000  3.100000  5.390000  5.250000
-#&gt; Maximum     10.840000  9.260000 12.740000 12.500000
-#&gt; 1. Quartile  6.315000  6.695000  6.250000  6.170000
-#&gt; 3. Quartile  8.570000  8.950000  7.980000  8.190000
-#&gt; Mean         7.500909  7.500909  7.500000  7.500909
-#&gt; Median       7.580000  8.140000  7.110000  7.040000
-#&gt; Sum         82.510000 82.510000 82.500000 82.510000
-#&gt; SE Mean      0.612541  0.612568  0.612196  0.612242
-#&gt; LCL Mean     6.136083  6.136024  6.135943  6.136748
-#&gt; UCL Mean     8.865735  8.865795  8.864057  8.865070
-#&gt; Variance     4.127269  4.127629  4.122620  4.123249
-#&gt; Stdev        2.031568  2.031657  2.030424  2.030579
-#&gt; Skewness    -0.048374 -0.978693  1.380120  1.120774
-#&gt; Kurtosis    -1.199123 -0.514319  1.240044  0.628751</code></pre>
-<p>As you can see from the table, the summary statistics for the four tables look very similar, however let’s graph these and see what kind of visualizations we get.</p>
-<div class="inline-figure"><img src="13-arithmetic_files/figure-html/unnamed-chunk-23-1.png" width="672"></div>
-<p>Pretty rad right? So yes, statistical data is vital, however it should not be the only thing you look at, sometimes a visualization can help you understand the data more! Later in this book, and in the upper level data analytics courses, we will cover visualizations more and how they can be useful.</p>
-</div>
 </div>
 <div id="exercises-1" class="section level2" number="9.4">
 <h2>
@@ -274,7 +221,7 @@ are mixed. For example:</p>
 <ol style="list-style-type: decimal">
 <li>Define</li>
 </ol>
-<div class="sourceCode" id="cb40"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb38"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">4</span>,<span class="fl">2</span>,<span class="fl">6</span><span class="op">)</span>
 <span class="va">y</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">0</span>,<span class="op">-</span><span class="fl">1</span><span class="op">)</span></code></pre></div>
 <ol start="2" style="list-style-type: decimal">
@@ -328,10 +275,7 @@ are mixed. For example:</p>
 <li><a class="nav-link" href="#introduction-1"><span class="header-section-number">9.1</span> Introduction</a></li>
 <li><a class="nav-link" href="#basic-functions"><span class="header-section-number">9.2</span> Basic Functions</a></li>
 <li>
-<a class="nav-link" href="#statistics-and-summaries"><span class="header-section-number">9.3</span> Statistics and Summaries</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#statistical-analysis"><span class="header-section-number">9.3.1</span> Statistical Analysis</a></li>
-<li><a class="nav-link" href="#anscombes-quartet"><span class="header-section-number">9.3.2</span> Anscombe’s Quartet</a></li>
-</ul>
+<a class="nav-link" href="#statistics-and-summaries"><span class="header-section-number">9.3</span> Statistics and Summaries</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#statistical-analysis"><span class="header-section-number">9.3.1</span> Statistical Analysis</a></li></ul>
 </li>
 <li><a class="nav-link" href="#exercises-1"><span class="header-section-number">9.4</span> Exercises</a></li>
 </ul>
@@ -351,7 +295,7 @@ are mixed. For example:</p>
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>BADM 371 Intro to Data Analytics</strong>" was written by BADM 371. It was last built on 2022-08-22.</p>
+    <p>"<strong>BADM 371 Intro to Data Analytics</strong>" was written by BADM 371. It was last built on 2022-09-01.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

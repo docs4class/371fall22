@@ -222,3 +222,105 @@ your answers in R.
 (d) y[1,2]
 (e) y[,2:3]
 
+# Data Frames
+
+Data Frames are data displayed in a format as a table.
+
+Data Frames can have different types of data inside it. While the first column can be character, the second and third can be numeric or logical. However, each column should have the same type of data.
+
+Use the data.frame() function to create a data frame:
+
+
+```r
+# Create a data frame
+Data_Frame <- data.frame (
+  Training = c("Strength", "Stamina", "Other"),
+  Pulse = c(100, 150, 120),
+  Duration = c(60, 30, 45)
+)
+
+# Print the data frame
+Data_Frame
+#>   Training Pulse Duration
+#> 1 Strength   100       60
+#> 2  Stamina   150       30
+#> 3    Other   120       45
+```
+
+
+Adding and Editing a Data Frame
+
+
+
+```r
+# Add a new row
+New_row_DF <- rbind(Data_Frame, c("Strength", 110, 110))
+
+# Print the new row
+New_row_DF
+#>   Training Pulse Duration
+#> 1 Strength   100       60
+#> 2  Stamina   150       30
+#> 3    Other   120       45
+#> 4 Strength   110      110
+# Add a new column
+New_col_DF <- cbind(Data_Frame, Steps = c(1000, 6000, 2000))
+
+# Print the new column
+New_col_DF
+#>   Training Pulse Duration Steps
+#> 1 Strength   100       60  1000
+#> 2  Stamina   150       30  6000
+#> 3    Other   120       45  2000
+
+# Combining Data Frames
+# Use the rbind() function to combine two or more data frames in R vertically:
+
+Data_Frame1 <- data.frame (
+  Training = c("Strength", "Stamina", "Other"),
+  Pulse = c(100, 150, 120),
+  Duration = c(60, 30, 45)
+)
+
+Data_Frame2 <- data.frame (
+  Training = c("Stamina", "Stamina", "Strength"),
+  Pulse = c(140, 150, 160),
+  Duration = c(30, 30, 20)
+)
+
+New_Data_Frame <- rbind(Data_Frame1, Data_Frame2)
+New_Data_Frame
+#>   Training Pulse Duration
+#> 1 Strength   100       60
+#> 2  Stamina   150       30
+#> 3    Other   120       45
+#> 4  Stamina   140       30
+#> 5  Stamina   150       30
+#> 6 Strength   160       20
+```
+
+## Excercises
+
+1. Write a R program to create the following data frame:
+
+
+```r
+# Create the data frame.
+emp.data <- data.frame(
+   emp_id = c (1:5), 
+   emp_name = c("Rick","Dan","Michelle","Ryan","Gary"),
+   salary = c(623.3,515.2,611.0,729.0,843.25), 
+      start_date = as.Date(c("2012-01-01", "2013-09-23", "2014-11-15", "2014-05-11",
+      "2015-03-27")),
+   stringsAsFactors = FALSE
+)
+# Print the data frame.			
+print(emp.data) 
+#>   emp_id emp_name salary start_date
+#> 1      1     Rick 623.30 2012-01-01
+#> 2      2      Dan 515.20 2013-09-23
+#> 3      3 Michelle 611.00 2014-11-15
+#> 4      4     Ryan 729.00 2014-05-11
+#> 5      5     Gary 843.25 2015-03-27
+```
+

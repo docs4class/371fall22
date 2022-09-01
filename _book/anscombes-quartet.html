@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 1 Introduction | BADM 371 Intro to Data Analytics</title>
+<title>Chapter 16 Anscombe’s Quartet | BADM 371 Intro to Data Analytics</title>
 <meta name="author" content="BADM 371">
-<meta name="description" content="This is a book that contains all of the materials and lessons for Dr. Turner’s data analytics one course.">
+<meta name="description" content="You may be asking now, why bother visualizing data if I have all these numbers that will tell me what I need to know about my data? You are correct in saying that statistical data is very useful,...">
 <meta name="generator" content="bookdown 0.25 with bs4_book()">
-<meta property="og:title" content="Chapter 1 Introduction | BADM 371 Intro to Data Analytics">
+<meta property="og:title" content="Chapter 16 Anscombe’s Quartet | BADM 371 Intro to Data Analytics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="This is a book that contains all of the materials and lessons for Dr. Turner’s data analytics one course.">
+<meta property="og:description" content="You may be asking now, why bother visualizing data if I have all these numbers that will tell me what I need to know about my data? You are correct in saying that statistical data is very useful,...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 1 Introduction | BADM 371 Intro to Data Analytics">
-<meta name="twitter:description" content="This is a book that contains all of the materials and lessons for Dr. Turner’s data analytics one course.">
+<meta name="twitter:title" content="Chapter 16 Anscombe’s Quartet | BADM 371 Intro to Data Analytics">
+<meta name="twitter:description" content="You may be asking now, why bother visualizing data if I have all these numbers that will tell me what I need to know about my data? You are correct in saying that statistical data is very useful,...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -43,7 +43,7 @@
 
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
-<li><a class="active" href="index.html"><span class="header-section-number">1</span> Introduction</a></li>
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a></li>
 <li><a class="" href="syllabus.html"><span class="header-section-number">2</span> Syllabus</a></li>
 <li><a class="" href="our-class-rhythm.html"><span class="header-section-number">3</span> Our Class Rhythm</a></li>
 <li><a class="" href="end-in-mind.html"><span class="header-section-number">4</span> End in Mind</a></li>
@@ -58,7 +58,7 @@
 <li><a class="" href="preloaded-data-and-mtcars.html"><span class="header-section-number">13</span> Preloaded data and mtcars</a></li>
 <li><a class="" href="more-simple-data-wrangling.html"><span class="header-section-number">14</span> More simple data wrangling</a></li>
 <li><a class="" href="gdh-ice-cream.html"><span class="header-section-number">15</span> GDH Ice Cream</a></li>
-<li><a class="" href="anscombes-quartet.html"><span class="header-section-number">16</span> Anscombe’s Quartet</a></li>
+<li><a class="active" href="anscombes-quartet.html"><span class="header-section-number">16</span> Anscombe’s Quartet</a></li>
 </ul>
 
         <div class="book-extra">
@@ -66,33 +66,73 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><!--bookdown:title:end--><!--bookdown:title:start--><div id="introduction" class="section level1" number="1">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="anscombes-quartet" class="section level1" number="16">
 <h1>
-<span class="header-section-number">1</span> Introduction<a class="anchor" aria-label="anchor" href="#introduction"><i class="fas fa-link"></i></a>
+<span class="header-section-number">16</span> Anscombe’s Quartet<a class="anchor" aria-label="anchor" href="#anscombes-quartet"><i class="fas fa-link"></i></a>
 </h1>
-<p>This is a book written which contains all the materials and lessons for <strong>BADM 371 Intro to Data Analytics</strong>. If you miss a day, want to review something we covered in class, or for any reason want to look for a worksheet, this is where you can go.</p>
-<p>Each chapter contains a different topic we will cover during the semester. Some larger topics are split into two chapters to make accessing the materials a little more intuitive.</p>
-<p>This book is updated automatically with any changes made to the documents during the semester, so if at any point you are told there was a change in the assignment, you can come here to get the updated version.</p>
-<p>Also, this book has benefited greatly from lots of free, readily available resources posted on the web and we leverage these extensively. I would encourage you to review these resources in your analytics journey. Some that we specifically use with great frequency are these (and I say loud <strong>THANK YOU</strong> to the authors!):</p>
-<ul>
-<li><a href="https://r4ds.had.co.nz/">R for Data Science</a></li>
-<li><a href="https://trevorhastie.github.io/ISLR/">An Introduction to Statistical Learning with Applications in R</a></li>
-<li><a href="https://gsp.humboldt.edu/olm/R/Tutorials/BestFirstRTutorial.pdf">R: A self-learn tutorial</a></li>
-<li><a href="https://datasciencebox.org/">Data Science in a Box</a></li>
-<li><a href="https://stackoverflow.com/questions/4862178/remove-rows-with-all-or-some-nas-missing-values-in-data-frame?rq=1">stackoverflow.com, for example</a></li>
-</ul>
+<p>You may be asking now, why bother visualizing data if I have all these numbers that will tell me what I need to know about my data? You are correct in saying that statistical data is very useful, and in many cases essential, however visualization is equally as important. Anscombe’s Quartet is a statistical phenomenon where four sets of data have very similar statistical properties, but very are completely different when graphed. Let’s take a look at the data:</p>
+<pre><code>#&gt;    x1 x2 x3 x4    y1   y2    y3    y4
+#&gt; 1  10 10 10  8  8.04 9.14  7.46  6.58
+#&gt; 2   8  8  8  8  6.95 8.14  6.77  5.76
+#&gt; 3  13 13 13  8  7.58 8.74 12.74  7.71
+#&gt; 4   9  9  9  8  8.81 8.77  7.11  8.84
+#&gt; 5  11 11 11  8  8.33 9.26  7.81  8.47
+#&gt; 6  14 14 14  8  9.96 8.10  8.84  7.04
+#&gt; 7   6  6  6  8  7.24 6.13  6.08  5.25
+#&gt; 8   4  4  4 19  4.26 3.10  5.39 12.50
+#&gt; 9  12 12 12  8 10.84 9.13  8.15  5.56
+#&gt; 10  7  7  7  8  4.82 7.26  6.42  7.91
+#&gt; 11  5  5  5  8  5.68 4.74  5.73  6.89</code></pre>
+<pre><code>#&gt;                    x1        x2        x3        x4
+#&gt; nobs        11.000000 11.000000 11.000000 11.000000
+#&gt; NAs          0.000000  0.000000  0.000000  0.000000
+#&gt; Minimum      4.000000  4.000000  4.000000  8.000000
+#&gt; Maximum     14.000000 14.000000 14.000000 19.000000
+#&gt; 1. Quartile  6.500000  6.500000  6.500000  8.000000
+#&gt; 3. Quartile 11.500000 11.500000 11.500000  8.000000
+#&gt; Mean         9.000000  9.000000  9.000000  9.000000
+#&gt; Median       9.000000  9.000000  9.000000  8.000000
+#&gt; Sum         99.000000 99.000000 99.000000 99.000000
+#&gt; SE Mean      1.000000  1.000000  1.000000  1.000000
+#&gt; LCL Mean     6.771861  6.771861  6.771861  6.771861
+#&gt; UCL Mean    11.228139 11.228139 11.228139 11.228139
+#&gt; Variance    11.000000 11.000000 11.000000 11.000000
+#&gt; Stdev        3.316625  3.316625  3.316625  3.316625
+#&gt; Skewness     0.000000  0.000000  0.000000  2.466911
+#&gt; Kurtosis    -1.528926 -1.528926 -1.528926  4.520661
+#&gt;                    y1        y2        y3        y4
+#&gt; nobs        11.000000 11.000000 11.000000 11.000000
+#&gt; NAs          0.000000  0.000000  0.000000  0.000000
+#&gt; Minimum      4.260000  3.100000  5.390000  5.250000
+#&gt; Maximum     10.840000  9.260000 12.740000 12.500000
+#&gt; 1. Quartile  6.315000  6.695000  6.250000  6.170000
+#&gt; 3. Quartile  8.570000  8.950000  7.980000  8.190000
+#&gt; Mean         7.500909  7.500909  7.500000  7.500909
+#&gt; Median       7.580000  8.140000  7.110000  7.040000
+#&gt; Sum         82.510000 82.510000 82.500000 82.510000
+#&gt; SE Mean      0.612541  0.612568  0.612196  0.612242
+#&gt; LCL Mean     6.136083  6.136024  6.135943  6.136748
+#&gt; UCL Mean     8.865735  8.865795  8.864057  8.865070
+#&gt; Variance     4.127269  4.127629  4.122620  4.123249
+#&gt; Stdev        2.031568  2.031657  2.030424  2.030579
+#&gt; Skewness    -0.048374 -0.978693  1.380120  1.120774
+#&gt; Kurtosis    -1.199123 -0.514319  1.240044  0.628751</code></pre>
+<p>As you can see from the table, the summary statistics for the four tables look very similar, however let’s graph these and see what kind of visualizations we get.</p>
+<div class="inline-figure"><img src="88-anscombe_files/figure-html/unnamed-chunk-4-1.png" width="672"></div>
+<p>Pretty rad right? So yes, statistical data is vital, however it should not be the only thing you look at, sometimes a visualization can help you understand the data more! Later in this book, and in the upper level data analytics courses, we will cover visualizations more and how they can be useful.</p>
+
 </div>
   <div class="chapter-nav">
+<div class="prev"><a href="gdh-ice-cream.html"><span class="header-section-number">15</span> GDH Ice Cream</a></div>
 <div class="empty"></div>
-<div class="next"><a href="syllabus.html"><span class="header-section-number">2</span> Syllabus</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#introduction"><span class="header-section-number">1</span> Introduction</a></li></ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#anscombes-quartet"><span class="header-section-number">16</span> Anscombe’s Quartet</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/index.Rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/index.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/88-anscombe.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/88-anscombe.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>

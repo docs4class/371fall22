@@ -54,9 +54,11 @@
 <li><a class="" href="objects-and-arithmetic.html"><span class="header-section-number">9</span> Objects and Arithmetic</a></li>
 <li><a class="active" href="summaries-and-subscripting.html"><span class="header-section-number">10</span> Summaries and Subscripting</a></li>
 <li><a class="" href="matrices.html"><span class="header-section-number">11</span> Matrices</a></li>
-<li><a class="" href="preloaded-data-and-mtcars.html"><span class="header-section-number">12</span> Preloaded data and mtcars</a></li>
-<li><a class="" href="more-simple-data-wrangling.html"><span class="header-section-number">13</span> More simple data wrangling</a></li>
-<li><a class="" href="gdh-ice-cream.html"><span class="header-section-number">14</span> GDH Ice Cream</a></li>
+<li><a class="" href="data-frames.html"><span class="header-section-number">12</span> Data Frames</a></li>
+<li><a class="" href="preloaded-data-and-mtcars.html"><span class="header-section-number">13</span> Preloaded data and mtcars</a></li>
+<li><a class="" href="more-simple-data-wrangling.html"><span class="header-section-number">14</span> More simple data wrangling</a></li>
+<li><a class="" href="gdh-ice-cream.html"><span class="header-section-number">15</span> GDH Ice Cream</a></li>
+<li><a class="" href="anscombes-quartet.html"><span class="header-section-number">16</span> Anscombe’s Quartet</a></li>
 </ul>
 
         <div class="book-extra">
@@ -73,10 +75,10 @@
 <span class="header-section-number">10.1</span> Introduction<a class="anchor" aria-label="anchor" href="#introduction-2"><i class="fas fa-link"></i></a>
 </h2>
 <p>Let’s suppose we’ve collected some data from an experiment and stored them in an object x:</p>
-<div class="sourceCode" id="cb41"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb39"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">7.5</span>,<span class="fl">8.2</span>,<span class="fl">3.1</span>,<span class="fl">5.6</span>,<span class="fl">8.2</span>,<span class="fl">9.3</span>,<span class="fl">6.5</span>,<span class="fl">7.0</span>,<span class="fl">9.3</span>,<span class="fl">1.2</span>,<span class="fl">14.5</span>,<span class="fl">6.2</span><span class="op">)</span></code></pre></div>
 <p>Some simple summary statistics of these data can be produced:</p>
-<div class="sourceCode" id="cb42"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb40"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>
 <span class="co">#&gt; [1] 7.216667</span>
 <span class="fu"><a href="https://rdrr.io/r/stats/cor.html">var</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>
@@ -90,7 +92,7 @@
 <p>It may be, however, that we subsequently learn that the first 6 data points correspond to measurements made on one machine, and the second six on another machine.</p>
 <p>This might lead us to want to summarize the two sets of data separately, so we would need to extract from
 x the two relevant subvectors. This is achieved by subscripting:</p>
-<div class="sourceCode" id="cb43"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb41"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">6</span><span class="op">]</span>
 <span class="co">#&gt; [1] 7.5 8.2 3.1 5.6 8.2 9.3</span>
 <span class="va">x</span><span class="op">[</span><span class="fl">7</span><span class="op">:</span><span class="fl">12</span><span class="op">]</span>
@@ -102,15 +104,15 @@ x the two relevant subvectors. This is achieved by subscripting:</p>
 <span class="co">#&gt;    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. </span>
 <span class="co">#&gt;   1.200   6.275   6.750   7.450   8.725  14.500</span></code></pre></div>
 <p>Other subsets can be created in the obvious way. For example:</p>
-<div class="sourceCode" id="cb44"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb42"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">2</span>,<span class="fl">4</span>,<span class="fl">9</span><span class="op">)</span><span class="op">]</span>
 <span class="co">#&gt; [1] 8.2 5.6 9.3</span></code></pre></div>
 <p>Negative integers can be used to exclude particular elements. For example</p>
-<div class="sourceCode" id="cb45"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb43"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">6</span><span class="op">)</span><span class="op">]</span>
 <span class="co">#&gt; [1]  6.5  7.0  9.3  1.2 14.5  6.2</span></code></pre></div>
 <p>has the same effect as</p>
-<div class="sourceCode" id="cb46"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb44"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fl">7</span><span class="op">:</span><span class="fl">12</span><span class="op">]</span>
 <span class="co">#&gt; [1]  6.5  7.0  9.3  1.2 14.5  6.2</span></code></pre></div>
 </div>
@@ -163,7 +165,7 @@ for each shop.</li>
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>BADM 371 Intro to Data Analytics</strong>" was written by BADM 371. It was last built on 2022-08-22.</p>
+    <p>"<strong>BADM 371 Intro to Data Analytics</strong>" was written by BADM 371. It was last built on 2022-09-01.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

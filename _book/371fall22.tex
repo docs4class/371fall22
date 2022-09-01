@@ -117,7 +117,7 @@
 
 \title{BADM 371 Intro to Data Analytics}
 \author{BADM 371}
-\date{2022-08-22}
+\date{2022-09-01}
 
 \begin{document}
 \maketitle
@@ -700,7 +700,7 @@ Not all functions have (or require) arguments:
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{date}\NormalTok{()}
-\CommentTok{\#\textgreater{} [1] "Mon Aug 22 08:43:02 2022"}
+\CommentTok{\#\textgreater{} [1] "Thu Sep  1 11:15:39 2022"}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1085,69 +1085,6 @@ Many people have heard of standard deviation, but not many can provide an accura
 \end{Shaded}
 
 Finally, we can cover variance. Variance is the measure of distance between two numbers. This statistic is often used to measure how spread out your data is and can be used to determine your model's accuracy. Typically, a higher variance means your model is inaccurate. So, when building models and reviewing your summary statistics, you want your variance to be as low as possible. There is a var() function that will find the variance of a variable for you, however typically you will create a confusion matrix (discussed in a later section) that will help you determine the variance, and thus accuracy of your model.
-
-\hypertarget{anscombes-quartet}{%
-\subsection{Anscombe's Quartet}\label{anscombes-quartet}}
-
-You may be asking now, why bother visualizing data if I have all these numbers that will tell me what I need to know about my data? You are correct in saying that statistical data is very useful, and in many cases essential, however visualization is equally as important. Anscombe's Quartet is a statistical phenomenon where four sets of data have very similar statistical properties, but very are completely different when graphed. Let's take a look at the data:
-
-\begin{verbatim}
-#>    x1 x2 x3 x4    y1   y2    y3    y4
-#> 1  10 10 10  8  8.04 9.14  7.46  6.58
-#> 2   8  8  8  8  6.95 8.14  6.77  5.76
-#> 3  13 13 13  8  7.58 8.74 12.74  7.71
-#> 4   9  9  9  8  8.81 8.77  7.11  8.84
-#> 5  11 11 11  8  8.33 9.26  7.81  8.47
-#> 6  14 14 14  8  9.96 8.10  8.84  7.04
-#> 7   6  6  6  8  7.24 6.13  6.08  5.25
-#> 8   4  4  4 19  4.26 3.10  5.39 12.50
-#> 9  12 12 12  8 10.84 9.13  8.15  5.56
-#> 10  7  7  7  8  4.82 7.26  6.42  7.91
-#> 11  5  5  5  8  5.68 4.74  5.73  6.89
-\end{verbatim}
-
-\begin{verbatim}
-#>                    x1        x2        x3        x4
-#> nobs        11.000000 11.000000 11.000000 11.000000
-#> NAs          0.000000  0.000000  0.000000  0.000000
-#> Minimum      4.000000  4.000000  4.000000  8.000000
-#> Maximum     14.000000 14.000000 14.000000 19.000000
-#> 1. Quartile  6.500000  6.500000  6.500000  8.000000
-#> 3. Quartile 11.500000 11.500000 11.500000  8.000000
-#> Mean         9.000000  9.000000  9.000000  9.000000
-#> Median       9.000000  9.000000  9.000000  8.000000
-#> Sum         99.000000 99.000000 99.000000 99.000000
-#> SE Mean      1.000000  1.000000  1.000000  1.000000
-#> LCL Mean     6.771861  6.771861  6.771861  6.771861
-#> UCL Mean    11.228139 11.228139 11.228139 11.228139
-#> Variance    11.000000 11.000000 11.000000 11.000000
-#> Stdev        3.316625  3.316625  3.316625  3.316625
-#> Skewness     0.000000  0.000000  0.000000  2.466911
-#> Kurtosis    -1.528926 -1.528926 -1.528926  4.520661
-#>                    y1        y2        y3        y4
-#> nobs        11.000000 11.000000 11.000000 11.000000
-#> NAs          0.000000  0.000000  0.000000  0.000000
-#> Minimum      4.260000  3.100000  5.390000  5.250000
-#> Maximum     10.840000  9.260000 12.740000 12.500000
-#> 1. Quartile  6.315000  6.695000  6.250000  6.170000
-#> 3. Quartile  8.570000  8.950000  7.980000  8.190000
-#> Mean         7.500909  7.500909  7.500000  7.500909
-#> Median       7.580000  8.140000  7.110000  7.040000
-#> Sum         82.510000 82.510000 82.500000 82.510000
-#> SE Mean      0.612541  0.612568  0.612196  0.612242
-#> LCL Mean     6.136083  6.136024  6.135943  6.136748
-#> UCL Mean     8.865735  8.865795  8.864057  8.865070
-#> Variance     4.127269  4.127629  4.122620  4.123249
-#> Stdev        2.031568  2.031657  2.030424  2.030579
-#> Skewness    -0.048374 -0.978693  1.380120  1.120774
-#> Kurtosis    -1.199123 -0.514319  1.240044  0.628751
-\end{verbatim}
-
-As you can see from the table, the summary statistics for the four tables look very similar, however let's graph these and see what kind of visualizations we get.
-
-\includegraphics{13-arithmetic_files/figure-latex/unnamed-chunk-23-1.pdf}
-
-Pretty rad right? So yes, statistical data is vital, however it should not be the only thing you look at, sometimes a visualization can help you understand the data more! Later in this book, and in the upper level data analytics courses, we will cover visualizations more and how they can be useful.
 
 \hypertarget{exercises-1}{%
 \section{Exercises}\label{exercises-1}}
@@ -1645,6 +1582,116 @@ the integer for either dimension implies that every element in that dimension is
   y{[},2:3{]}
 \end{enumerate}
 
+\hypertarget{data-frames}{%
+\chapter{Data Frames}\label{data-frames}}
+
+Data Frames are data displayed in a format as a table.
+
+Data Frames can have different types of data inside it. While the first column can be character, the second and third can be numeric or logical. However, each column should have the same type of data.
+
+Use the data.frame() function to create a data frame:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Create a data frame}
+\NormalTok{Data\_Frame }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{ (}
+  \AttributeTok{Training =} \FunctionTok{c}\NormalTok{(}\StringTok{"Strength"}\NormalTok{, }\StringTok{"Stamina"}\NormalTok{, }\StringTok{"Other"}\NormalTok{),}
+  \AttributeTok{Pulse =} \FunctionTok{c}\NormalTok{(}\DecValTok{100}\NormalTok{, }\DecValTok{150}\NormalTok{, }\DecValTok{120}\NormalTok{),}
+  \AttributeTok{Duration =} \FunctionTok{c}\NormalTok{(}\DecValTok{60}\NormalTok{, }\DecValTok{30}\NormalTok{, }\DecValTok{45}\NormalTok{)}
+\NormalTok{)}
+
+\CommentTok{\# Print the data frame}
+\NormalTok{Data\_Frame}
+\CommentTok{\#\textgreater{}   Training Pulse Duration}
+\CommentTok{\#\textgreater{} 1 Strength   100       60}
+\CommentTok{\#\textgreater{} 2  Stamina   150       30}
+\CommentTok{\#\textgreater{} 3    Other   120       45}
+\end{Highlighting}
+\end{Shaded}
+
+Adding and Editing a Data Frame
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Add a new row}
+\NormalTok{New\_row\_DF }\OtherTok{\textless{}{-}} \FunctionTok{rbind}\NormalTok{(Data\_Frame, }\FunctionTok{c}\NormalTok{(}\StringTok{"Strength"}\NormalTok{, }\DecValTok{110}\NormalTok{, }\DecValTok{110}\NormalTok{))}
+
+\CommentTok{\# Print the new row}
+\NormalTok{New\_row\_DF}
+\CommentTok{\#\textgreater{}   Training Pulse Duration}
+\CommentTok{\#\textgreater{} 1 Strength   100       60}
+\CommentTok{\#\textgreater{} 2  Stamina   150       30}
+\CommentTok{\#\textgreater{} 3    Other   120       45}
+\CommentTok{\#\textgreater{} 4 Strength   110      110}
+\CommentTok{\# Add a new column}
+\NormalTok{New\_col\_DF }\OtherTok{\textless{}{-}} \FunctionTok{cbind}\NormalTok{(Data\_Frame, }\AttributeTok{Steps =} \FunctionTok{c}\NormalTok{(}\DecValTok{1000}\NormalTok{, }\DecValTok{6000}\NormalTok{, }\DecValTok{2000}\NormalTok{))}
+
+\CommentTok{\# Print the new column}
+\NormalTok{New\_col\_DF}
+\CommentTok{\#\textgreater{}   Training Pulse Duration Steps}
+\CommentTok{\#\textgreater{} 1 Strength   100       60  1000}
+\CommentTok{\#\textgreater{} 2  Stamina   150       30  6000}
+\CommentTok{\#\textgreater{} 3    Other   120       45  2000}
+
+\CommentTok{\# Combining Data Frames}
+\CommentTok{\# Use the rbind() function to combine two or more data frames in R vertically:}
+
+\NormalTok{Data\_Frame1 }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{ (}
+  \AttributeTok{Training =} \FunctionTok{c}\NormalTok{(}\StringTok{"Strength"}\NormalTok{, }\StringTok{"Stamina"}\NormalTok{, }\StringTok{"Other"}\NormalTok{),}
+  \AttributeTok{Pulse =} \FunctionTok{c}\NormalTok{(}\DecValTok{100}\NormalTok{, }\DecValTok{150}\NormalTok{, }\DecValTok{120}\NormalTok{),}
+  \AttributeTok{Duration =} \FunctionTok{c}\NormalTok{(}\DecValTok{60}\NormalTok{, }\DecValTok{30}\NormalTok{, }\DecValTok{45}\NormalTok{)}
+\NormalTok{)}
+
+\NormalTok{Data\_Frame2 }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{ (}
+  \AttributeTok{Training =} \FunctionTok{c}\NormalTok{(}\StringTok{"Stamina"}\NormalTok{, }\StringTok{"Stamina"}\NormalTok{, }\StringTok{"Strength"}\NormalTok{),}
+  \AttributeTok{Pulse =} \FunctionTok{c}\NormalTok{(}\DecValTok{140}\NormalTok{, }\DecValTok{150}\NormalTok{, }\DecValTok{160}\NormalTok{),}
+  \AttributeTok{Duration =} \FunctionTok{c}\NormalTok{(}\DecValTok{30}\NormalTok{, }\DecValTok{30}\NormalTok{, }\DecValTok{20}\NormalTok{)}
+\NormalTok{)}
+
+\NormalTok{New\_Data\_Frame }\OtherTok{\textless{}{-}} \FunctionTok{rbind}\NormalTok{(Data\_Frame1, Data\_Frame2)}
+\NormalTok{New\_Data\_Frame}
+\CommentTok{\#\textgreater{}   Training Pulse Duration}
+\CommentTok{\#\textgreater{} 1 Strength   100       60}
+\CommentTok{\#\textgreater{} 2  Stamina   150       30}
+\CommentTok{\#\textgreater{} 3    Other   120       45}
+\CommentTok{\#\textgreater{} 4  Stamina   140       30}
+\CommentTok{\#\textgreater{} 5  Stamina   150       30}
+\CommentTok{\#\textgreater{} 6 Strength   160       20}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{excercises}{%
+\section{Excercises}\label{excercises}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Write a R program to create the following data frame:
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Create the data frame.}
+\NormalTok{emp.data }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}
+   \AttributeTok{emp\_id =} \FunctionTok{c}\NormalTok{ (}\DecValTok{1}\SpecialCharTok{:}\DecValTok{5}\NormalTok{), }
+   \AttributeTok{emp\_name =} \FunctionTok{c}\NormalTok{(}\StringTok{"Rick"}\NormalTok{,}\StringTok{"Dan"}\NormalTok{,}\StringTok{"Michelle"}\NormalTok{,}\StringTok{"Ryan"}\NormalTok{,}\StringTok{"Gary"}\NormalTok{),}
+   \AttributeTok{salary =} \FunctionTok{c}\NormalTok{(}\FloatTok{623.3}\NormalTok{,}\FloatTok{515.2}\NormalTok{,}\FloatTok{611.0}\NormalTok{,}\FloatTok{729.0}\NormalTok{,}\FloatTok{843.25}\NormalTok{), }
+      \AttributeTok{start\_date =} \FunctionTok{as.Date}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\StringTok{"2012{-}01{-}01"}\NormalTok{, }\StringTok{"2013{-}09{-}23"}\NormalTok{, }\StringTok{"2014{-}11{-}15"}\NormalTok{, }\StringTok{"2014{-}05{-}11"}\NormalTok{,}
+      \StringTok{"2015{-}03{-}27"}\NormalTok{)),}
+   \AttributeTok{stringsAsFactors =} \ConstantTok{FALSE}
+\NormalTok{)}
+\CommentTok{\# Print the data frame.         }
+\FunctionTok{print}\NormalTok{(emp.data) }
+\CommentTok{\#\textgreater{}   emp\_id emp\_name salary start\_date}
+\CommentTok{\#\textgreater{} 1      1     Rick 623.30 2012{-}01{-}01}
+\CommentTok{\#\textgreater{} 2      2      Dan 515.20 2013{-}09{-}23}
+\CommentTok{\#\textgreater{} 3      3 Michelle 611.00 2014{-}11{-}15}
+\CommentTok{\#\textgreater{} 4      4     Ryan 729.00 2014{-}05{-}11}
+\CommentTok{\#\textgreater{} 5      5     Gary 843.25 2015{-}03{-}27}
+\end{Highlighting}
+\end{Shaded}
+
 \hypertarget{preloaded-data-and-mtcars}{%
 \chapter{\texorpdfstring{Preloaded data and \texttt{mtcars}}{Preloaded data and mtcars}}\label{preloaded-data-and-mtcars}}
 
@@ -2066,6 +2113,69 @@ GDH provides ice cream cones for its customers. In the last three years GDH used
 \item
   Can you add meaningful row names and column names?
 \end{enumerate}
+
+\hypertarget{anscombes-quartet}{%
+\chapter{Anscombe's Quartet}\label{anscombes-quartet}}
+
+You may be asking now, why bother visualizing data if I have all these numbers that will tell me what I need to know about my data? You are correct in saying that statistical data is very useful, and in many cases essential, however visualization is equally as important. Anscombe's Quartet is a statistical phenomenon where four sets of data have very similar statistical properties, but very are completely different when graphed. Let's take a look at the data:
+
+\begin{verbatim}
+#>    x1 x2 x3 x4    y1   y2    y3    y4
+#> 1  10 10 10  8  8.04 9.14  7.46  6.58
+#> 2   8  8  8  8  6.95 8.14  6.77  5.76
+#> 3  13 13 13  8  7.58 8.74 12.74  7.71
+#> 4   9  9  9  8  8.81 8.77  7.11  8.84
+#> 5  11 11 11  8  8.33 9.26  7.81  8.47
+#> 6  14 14 14  8  9.96 8.10  8.84  7.04
+#> 7   6  6  6  8  7.24 6.13  6.08  5.25
+#> 8   4  4  4 19  4.26 3.10  5.39 12.50
+#> 9  12 12 12  8 10.84 9.13  8.15  5.56
+#> 10  7  7  7  8  4.82 7.26  6.42  7.91
+#> 11  5  5  5  8  5.68 4.74  5.73  6.89
+\end{verbatim}
+
+\begin{verbatim}
+#>                    x1        x2        x3        x4
+#> nobs        11.000000 11.000000 11.000000 11.000000
+#> NAs          0.000000  0.000000  0.000000  0.000000
+#> Minimum      4.000000  4.000000  4.000000  8.000000
+#> Maximum     14.000000 14.000000 14.000000 19.000000
+#> 1. Quartile  6.500000  6.500000  6.500000  8.000000
+#> 3. Quartile 11.500000 11.500000 11.500000  8.000000
+#> Mean         9.000000  9.000000  9.000000  9.000000
+#> Median       9.000000  9.000000  9.000000  8.000000
+#> Sum         99.000000 99.000000 99.000000 99.000000
+#> SE Mean      1.000000  1.000000  1.000000  1.000000
+#> LCL Mean     6.771861  6.771861  6.771861  6.771861
+#> UCL Mean    11.228139 11.228139 11.228139 11.228139
+#> Variance    11.000000 11.000000 11.000000 11.000000
+#> Stdev        3.316625  3.316625  3.316625  3.316625
+#> Skewness     0.000000  0.000000  0.000000  2.466911
+#> Kurtosis    -1.528926 -1.528926 -1.528926  4.520661
+#>                    y1        y2        y3        y4
+#> nobs        11.000000 11.000000 11.000000 11.000000
+#> NAs          0.000000  0.000000  0.000000  0.000000
+#> Minimum      4.260000  3.100000  5.390000  5.250000
+#> Maximum     10.840000  9.260000 12.740000 12.500000
+#> 1. Quartile  6.315000  6.695000  6.250000  6.170000
+#> 3. Quartile  8.570000  8.950000  7.980000  8.190000
+#> Mean         7.500909  7.500909  7.500000  7.500909
+#> Median       7.580000  8.140000  7.110000  7.040000
+#> Sum         82.510000 82.510000 82.500000 82.510000
+#> SE Mean      0.612541  0.612568  0.612196  0.612242
+#> LCL Mean     6.136083  6.136024  6.135943  6.136748
+#> UCL Mean     8.865735  8.865795  8.864057  8.865070
+#> Variance     4.127269  4.127629  4.122620  4.123249
+#> Stdev        2.031568  2.031657  2.030424  2.030579
+#> Skewness    -0.048374 -0.978693  1.380120  1.120774
+#> Kurtosis    -1.199123 -0.514319  1.240044  0.628751
+\end{verbatim}
+
+As you can see from the table, the summary statistics for the four tables look very similar, however let's graph these and see what kind of visualizations we get.
+
+\includegraphics{88-anscombe_files/figure-latex/unnamed-chunk-4-1.pdf}
+
+Pretty rad right? So yes, statistical data is vital, however it should not be the only thing you look at, sometimes a visualization can help you understand the data more! Later in this book, and in the upper level data analytics courses, we will cover visualizations more and how they can be useful.
 
   \bibliography{book.bib,packages.bib}
 

@@ -46,7 +46,6 @@ introduction-1
 basic-functions
 statistics-and-summaries
 statistical-analysis
-anscombes-quartet
 exercises-1
 summaries-and-subscripting
 introduction-2
@@ -56,6 +55,8 @@ cbind-and-rbind
 review-questions
 matrix-function
 exercises-2
+data-frames
+excercises
 preloaded-data-and-mtcars
 practicing-with-mtcars-data-set
 excerises-for-you
@@ -65,3 +66,4 @@ more-fun-this-class-is-really-awesome-isnt-it
 gdh-ice-cream
 problem-introduction
 assignment
+anscombes-quartet
