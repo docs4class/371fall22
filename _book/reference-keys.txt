@@ -66,6 +66,5 @@ more-fun-this-class-is-really-awesome-isnt-it
 gdh-ice-cream
 problem-introduction
 assignment
-exam-1-study-guide
 exam-1-practice
 anscombes-quartet
