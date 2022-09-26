@@ -20,17 +20,17 @@ Date | Topic |
 | 	Friday, September 16, 2022	| 	QUIZ	3| 
 | 	Monday, September 19, 2022	| 	Review	| 
 | 	Wednesday, September 21, 2022	| 	**EXAM 1**	| 
-| 	Friday, September 23, 2022	| 	Social Dilemma and Review	| 
-| 	Monday, September 26, 2022	| 		| 
-| 	Wednesday, September 28, 2022	| 		| 
-| 	Friday, September 30, 2022	| 		| 
-| 	Monday, October 3, 2022	| 		| 
-| 	Wednesday, October 5, 2022	| 		| 
-| 	Friday, October 7, 2022	| 		| 
+| 	Friday, September 23, 2022	| Exam 1 Review	| 
+| 	Monday, September 26, 2022	| 	Linear Regression	| 
+| 	Wednesday, September 28, 2022	| Mulivariate Regression		| 
+| 	Friday, September 30, 2022	| 	Quiz	| 
+| 	Monday, October 3, 2022	| Social Dilemma and Review	| 
+| 	Wednesday, October 5, 2022	| 	dplyr	| 
+| 	Friday, October 7, 2022	| 	dplyr	| 
 | 	Monday, October 10, 2022	| 	**FALL BREAK**	| 
-| 	Wednesday, October 12, 2022	| 		| 
-| 	Friday, October 14, 2022	| 		| 
-| 	Monday, October 17, 2022	| 		| 
+| 	Wednesday, October 12, 2022	| Real data	| 
+| 	Friday, October 14, 2022	| Real data	| 
+| 	Monday, October 17, 2022	| 	Review	| 
 | 	Wednesday, October 19, 2022	| 	**EXAM 2**	| 
 | 	Friday, October 21, 2022	| 	Strategic Plan Launch (No classes)	| 
 | 	Monday, October 24, 2022	| 		| 
