@@ -66,3 +66,29 @@ Please use the `iris` dataset from base R to answer the following questions:
 #> 3 virginica     50
 ```
 
+## More practice
+
+Using the `flights` data answer:
+
+1.  How many different destinations are in the flights data?
+2.  Which destination has the most flights?
+3.  How many origin airports are in the state of sick, and which has the most flights?
+4.  Which month of the year has the most flights? The least?   
+5.  Which Carrier has the longest average flight?
+6.  Which carrier has the most flights in the month of October leaving from Newark?
+7.  What percentage of June flights arrive late?
+8.  Which carrier has the most late flights in the month of December?
+9.  This one is hard:  for flights leaving JFK, which airline has the greatest percentage of late flights?
+10.  Think of a question that you could ask about this data. What’s the question, and what’s the answer?
+
+## Yet more practice
+
+Using the `iris` data answer:
+
+1. How many flowers are species "virginica" and have a Sepal.Length greater than 7.5? 
+1. Create a new variable called Sepal.Area with is: `Sepal.Area = Sepal.Width * Sepal.Length`
+2. What is the maximum new Sepal.Area?
+3. Calculate the average Sepal.Area for each species and organize these values in descending order.
+4. Find the minimum Sepal.Area for each species and organize these values in descending order.
+5. How many flowers of each species have Sepal.Area of less than 15?
+6. What is the mean sepal length for flowers with a Sepal. Area of less than 15?

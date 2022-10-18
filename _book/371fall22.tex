@@ -117,7 +117,7 @@
 
 \title{BADM 371 Intro to Data Analytics}
 \author{BADM 371}
-\date{2022-09-26}
+\date{2022-10-18}
 
 \begin{document}
 \maketitle
@@ -700,7 +700,7 @@ Not all functions have (or require) arguments:
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{date}\NormalTok{()}
-\CommentTok{\#\textgreater{} [1] "Mon Sep 26 07:45:15 2022"}
+\CommentTok{\#\textgreater{} [1] "Tue Oct 18 08:54:49 2022"}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2967,6 +2967,60 @@ Please use the \texttt{iris} dataset from base R to answer the following questio
 #> 3 virginica     50
 \end{verbatim}
 
+\hypertarget{more-practice}{%
+\section{More practice}\label{more-practice}}
+
+Using the \texttt{flights} data answer:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  How many different destinations are in the flights data?
+\item
+  Which destination has the most flights?
+\item
+  How many origin airports are in the state of sick, and which has the most flights?
+\item
+  Which month of the year has the most flights? The least?\\
+\item
+  Which Carrier has the longest average flight?
+\item
+  Which carrier has the most flights in the month of October leaving from Newark?
+\item
+  What percentage of June flights arrive late?
+\item
+  Which carrier has the most late flights in the month of December?
+\item
+  This one is hard: for flights leaving JFK, which airline has the greatest percentage of late flights?
+\item
+  Think of a question that you could ask about this data. What's the question, and what's the answer?
+\end{enumerate}
+
+\hypertarget{yet-more-practice}{%
+\section{Yet more practice}\label{yet-more-practice}}
+
+Using the \texttt{iris} data answer:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  How many flowers are species ``virginica'' and have a Sepal.Length greater than 7.5?
+\item
+  Create a new variable called Sepal.Area with is: \texttt{Sepal.Area\ =\ Sepal.Width\ *\ Sepal.Length}
+\item
+  What is the maximum new Sepal.Area?
+\item
+  Calculate the average Sepal.Area for each species and organize these values in descending order.
+\item
+  Find the minimum Sepal.Area for each species and organize these values in descending order.
+\item
+  How many flowers of each species have Sepal.Area of less than 15?
+\item
+  What is the mean sepal length for flowers with a Sepal. Area of less than 15?
+\end{enumerate}
+
 \hypertarget{dplyr-and-nycflights13}{%
 \chapter{\texorpdfstring{\texttt{dplyr} and \texttt{nycflights13}}{dplyr and nycflights13}}\label{dplyr-and-nycflights13}}
 
@@ -3201,16 +3255,16 @@ Please use the \texttt{iris} dataset from base R to answer the following questio
 \CommentTok{\#\textgreater{} \# Groups:   month, day [365]}
 \CommentTok{\#\textgreater{}     year month   day dep\_time sched\_dep\_time dep\_delay}
 \CommentTok{\#\textgreater{}    \textless{}int\textgreater{} \textless{}int\textgreater{} \textless{}int\textgreater{}    \textless{}int\textgreater{}          \textless{}int\textgreater{}     \textless{}dbl\textgreater{}}
-\CommentTok{\#\textgreater{}  1  2013     1     1     1228           1224         4}
-\CommentTok{\#\textgreater{}  2  2013     1     1     1342           1320        22}
-\CommentTok{\#\textgreater{}  3  2013     1     1     2209           2145        24}
+\CommentTok{\#\textgreater{}  1  2013     1     1     2306           2245        21}
+\CommentTok{\#\textgreater{}  2  2013     1     1     1428           1329        59}
+\CommentTok{\#\textgreater{}  3  2013     1     1     1208           1158        10}
 \CommentTok{\#\textgreater{}  4  2013     1     2     1628           1615        13}
-\CommentTok{\#\textgreater{}  5  2013     1     2     1442           1445        {-}3}
-\CommentTok{\#\textgreater{}  6  2013     1     2     1220           1229        {-}9}
-\CommentTok{\#\textgreater{}  7  2013     1     3     1958           1930        28}
-\CommentTok{\#\textgreater{}  8  2013     1     3      704            700         4}
-\CommentTok{\#\textgreater{}  9  2013     1     3     1633           1635        {-}2}
-\CommentTok{\#\textgreater{} 10  2013     1     4     1053           1100        {-}7}
+\CommentTok{\#\textgreater{}  5  2013     1     2     1903           1910        {-}7}
+\CommentTok{\#\textgreater{}  6  2013     1     2      904            910        {-}6}
+\CommentTok{\#\textgreater{}  7  2013     1     3     1219           1217         2}
+\CommentTok{\#\textgreater{}  8  2013     1     3     2033           1945        48}
+\CommentTok{\#\textgreater{}  9  2013     1     3     1221           1125        56}
+\CommentTok{\#\textgreater{} 10  2013     1     4      834            835        {-}1}
 \CommentTok{\#\textgreater{} \# ... with 1,085 more rows, and 13 more variables:}
 \CommentTok{\#\textgreater{} \#   arr\_time \textless{}int\textgreater{}, sched\_arr\_time \textless{}int\textgreater{}, arr\_delay \textless{}dbl\textgreater{},}
 \CommentTok{\#\textgreater{} \#   carrier \textless{}chr\textgreater{}, flight \textless{}int\textgreater{}, tailnum \textless{}chr\textgreater{},}
